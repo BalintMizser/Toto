@@ -1,0 +1,1 @@
+kerdes=['Ki fog győzni C']
