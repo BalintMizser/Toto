@@ -1,1 +1,1 @@
-kerdes=['Ki fog győzni C']
+orszagok= ['Magyarország','Spanyolország','Franciaország','Hollandia','Németország','Anglia','Belgium','Finnország','Horvátország','Szerbia','Austria','Svájc','Dánia','Olaszország','Lengyelország','Görögország','Románia','Írország']
