@@ -1,4 +1,3 @@
-from main import *
 from data import kerdesek, eredmenyek
 
 def menu():
