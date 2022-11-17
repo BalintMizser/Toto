@@ -1,2 +1,3 @@
 kerdesek=[]
 eredmenyek=[]
+tippek=[]
