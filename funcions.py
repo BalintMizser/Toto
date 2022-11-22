@@ -1,10 +1,14 @@
 from data import kerdesek, eredmenyek, tippek
 from os import system
+import time
+
 meccsek=''
 
 def menu():
     print('0 - kilépés')
-    print('1 - ')
+    print('1 - tippelj! (1,2,x)')
+    print("2 - kiértékelés")
+    print('3 - nyereményem')
     return input("Válassz: ")
 
 def readFromFile():
@@ -27,4 +31,18 @@ def beker():
     for i in range(len(kerdesek)):
         tippek.append(input(f'{kerdesek[i]}:'))
     # print(tippek)
-    input()
+    time.sleep(0.5)
+    # input()
+    
+def kereses():
+    talalt = 0
+    for tipp, eredmeny in zip(tippek, eredmenyek):
+        if tipp==eredmeny:
+            talalt += 1
+    return talalt
+# def megoldas():
+#     talalt=8
+#     for i, kulcs in enumerate(kereses()):
+#         if talalt<kulcs:
+#             return i
+#     return False
