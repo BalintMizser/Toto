@@ -40,9 +40,10 @@ def kereses():
         if tipp==eredmeny:
             talalt += 1
     return talalt
-# def megoldas():
-#     talalt=8
-#     for i, kulcs in enumerate(kereses()):
-#         if talalt<kulcs:
-#             return i
-#     return False
+
+def megoldas():
+    talalt=8
+    for i, kulcs in range(len(kereses())):
+        if talalt<kulcs:
+            return i
+    

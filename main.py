@@ -3,18 +3,31 @@ from data import kerdesek, eredmenyek
 from os import system
 
 import time
+system('cls')
+print('Készen áll?')
+print('Ha igen nyomjon Entert!')
+input()
 choice= ''
-system=('cls')
+
 while choice != '0':
     choice = menu()
     if choice == '1':
         readFromFile()
         #kiir()
         beker()
-    if choice == '2':
+        time.sleep(1.5)
+        system('cls')
+        print('Feljegyezve!')
+        time.sleep(2)
+        system('cls')
+        menu()
+    elif choice == '2':
         print(f'Találatok száma: {kereses()}')
-    if choice == '3':
+    elif choice == '3':
         print('')
+    elif choice == '0':
+        pass
     else:
-        choice=''
+        choice = ''
+        print('Nincs ilyen opció!')
         time.sleep(1)
