@@ -1,4 +1,4 @@
-from funcions import menu, readFromFile, kiir, beker,kereses
+from funcions import menu, readFromFile, kiir, beker, kereses, megoldas 
 from data import kerdesek, eredmenyek
 from os import system
 
@@ -20,12 +20,20 @@ while choice != '0':
         print('Feljegyezve!')
         time.sleep(2)
         system('cls')
-        menu()
+        
     elif choice == '2':
-        print(f'Találatok száma: {kereses()}')
+        print(f'Találatok száma: {kereses()}\n')
+        
     elif choice == '3':
-        print('')
+        system('cls')
+        print(f'{megoldas()}')
+        time.sleep(2)
     elif choice == '0':
+        time.sleep(1)
+        system('cls')
+        print('Viszlát!')
+        time.sleep(1)
+        system('cls')
         pass
     else:
         choice = ''

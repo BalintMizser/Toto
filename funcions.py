@@ -42,8 +42,21 @@ def kereses():
     return talalt
 
 def megoldas():
-    talalt=8
-    for i, kulcs in range(len(kereses())):
-        if talalt<kulcs:
-            return i
+    szoveg= ''
+    talalt2=10
+    if kereses()==talalt2:
+        print('Nyereményed 20.000 Ft')
+    elif kereses()==11:
+        print('Nyereményed 100.000 Ft')
+    elif kereses()==12:
+        print('Nyereményed 625.000 Ft')
+    elif kereses()==13:
+        print('Nyereményed 1.000.000 Ft')
+    elif kereses()==14:
+        print('Nyereményed 5.000.000 Ft')
+    else:
+        kereses()<talalt2
+        print('Sajnáljuk nem nyertél!')
+    return szoveg
+            
     
